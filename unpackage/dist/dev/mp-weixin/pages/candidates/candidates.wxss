@@ -1,0 +1,334 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.news {
+  background-color: #ececec;
+}
+.onliner {
+  margin: 10rpx auto;
+  width: 95%;
+  padding: 0 18rpx;
+  padding-bottom: 30rpx;
+  background-color: #FFFFFF;
+}
+.myname {
+  width: 100%;
+  border-bottom: 2rpx solid #dcdcdc;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40rpx 0;
+}
+.myname .name view:nth-child(1) {
+  font-size: 40rpx;
+  font-weight: 700;
+}
+.myname .name view:nth-child(2) {
+  margin-top: 10rpx;
+  font-size: 30rpx;
+  color: #8c8c8c;
+}
+.myname .img {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+  background-color: #F8F8F8;
+}
+.myname .img image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.state {
+  width: 100%;
+  border-bottom: 2rpx solid #dcdcdc;
+  padding: 40rpx 0;
+}
+.state .state-title {
+  font-size: 35rpx;
+}
+.state .personal {
+  width: 100%;
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+  font-size: 30rpx;
+  color: #8F8F94;
+}
+.state .personal view {
+  margin-right: 30rpx;
+}
+.state .personal view text {
+  margin-right: 10rpx;
+}
+.state .statetext {
+  font-size: 30rpx;
+  color: #8F8F94;
+}
+.state .enclosure {
+  margin-top: 30rpx;
+  width: 100%;
+  height: 200rpx;
+  background-color: #FFFFFF;
+  box-shadow: 1rpx 1rpx 20rpx #e2e2e2;
+  display: flex;
+  align-items: center;
+}
+.state .enclosure .enctext {
+  font-size: 35rpx;
+  margin-left: 30rpx;
+}
+.state .enclosure .enctext view {
+  color: #222222;
+}
+.state .enclosure .enctext text {
+  color: #45CFFE;
+  margin-top: 10rpx;
+  font-size: 30rpx;
+}
+.expect {
+  width: 100%;
+  border-bottom: 2rpx solid #dcdcdc;
+  padding: 40rpx 0;
+}
+.expect .expect-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.expect .expect-top .exp-info {
+  font-size: 35rpx;
+  font-weight: 600;
+}
+.expect .expect-lower {
+  margin-top: 30rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.expect .expect-lower .lower-l view:nth-child(1) {
+  font-size: 30rpx;
+  font-weight: 700;
+}
+.expect .expect-lower .lower-l view:nth-child(1) text {
+  margin-left: 10rpx;
+}
+.expect .expect-lower .lower-l view:nth-child(2) {
+  font-size: 28rpx;
+  color: #808080;
+}
+.expect .expect-lower .lower-l view:nth-child(2) text {
+  margin-left: 10rpx;
+}
+.experience {
+  width: 100%;
+  border-bottom: 2rpx solid #dcdcdc;
+  padding: 40rpx 0;
+}
+.experience .expect-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.experience .expect-top .exp-info {
+  font-size: 35rpx;
+  font-weight: 600;
+}
+.experience .corporatename {
+  margin-top: 20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.experience .corporatename text:nth-child(1) {
+  font-size: 28rpx;
+  font-weight: 700;
+}
+.experience .corporatename text:nth-child(2) {
+  font-size: 28rpx;
+  color: #999999;
+}
+.experience .achievement {
+  margin-top: 20rpx;
+  align-items: center;
+  justify-content: space-between;
+}
+.experience .achievement text:nth-child(1) {
+  font-size: 28rpx;
+  font-weight: 700;
+}
+.experience .position {
+  margin-top: 10rpx;
+  font-size: 28rpx;
+  color: #808080;
+}
+.experience .position text {
+  margin-left: 10rpx;
+}
+.experience .position text:nth-child(3) {
+  padding: 0rpx 10rpx;
+  border: 2rpx solid #45CFFE;
+  border-radius: 10rpx;
+  color: #45CFFE;
+  font-size: 25rpx;
+}
+.experience .jobcontent {
+  margin-top: 30rpx;
+  width: 100%;
+  font-size: 30rpx;
+  color: #808080;
+}
+.experience .skill {
+  margin-top: 20rpx;
+  font-size: 25rpx;
+  display: flex;
+  align-items: center;
+}
+.experience .skill view {
+  padding: 5rpx 10rpx;
+  background-color: #F5F5F5;
+  margin-left: 10rpx;
+}
+.education {
+  width: 100%;
+  border-bottom: 2rpx solid #dcdcdc;
+  padding: 40rpx 0;
+}
+.education .expect-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.education .expect-top .exp-info {
+  font-size: 35rpx;
+  font-weight: 600;
+}
+.education .ednname {
+  margin-top: 40rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.education .ednname .ednname-l view:nth-child(1) {
+  font-size: 30rpx;
+  font-weight: 700;
+}
+.education .ednname .ednname-l view:nth-child(2) {
+  font-size: 28rpx;
+  color: #808080;
+}
+.education .time {
+  font-size: 28rpx;
+  color: #808080;
+}
+.certificate {
+  margin-top: 30rpx;
+  font-size: 25rpx;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.certificate text {
+  padding: 5rpx 10rpx;
+  background-color: #F5F5F5;
+  margin-left: 10rpx;
+  margin: 10rpx;
+}
+.custom {
+  width: 100%;
+  border-bottom: 2rpx solid #dcdcdc;
+  padding: 40rpx 0;
+  padding-bottom: 100rpx;
+}
+.custom .cus-title {
+  font-size: 35rpx;
+  font-weight: 700;
+  margin-bottom: 20rpx;
+}
+.custom .crayimg {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.custom .crayimg .cray {
+  width: 80%;
+  overflow: hidden;
+}
+.custom .crayimg .cray image {
+  width: 100%;
+}
+.preview {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 150rpx;
+  text-align: center;
+  line-height: 80rpx;
+}
+.preview view:nth-child(1) {
+  width: 220rpx;
+  height: 80rpx;
+  border: 2rpx solid #45CFFE;
+  color: #45CFFE;
+  font-size: 30rpx;
+  border-radius: 8rpx;
+}
+.preview view:nth-child(2) {
+  width: 450rpx;
+  height: 82rpx;
+  background-color: #45CFFE;
+  color: #FFFFFF;
+  font-size: 30rpx;
+  border-radius: 8rpx;
+}
+.previews {
+  width: 100%;
+  position: fixed;
+  height: 130rpx;
+  text-align: center;
+  line-height: 80rpx;
+  display: flex;
+  z-index: 2;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  bottom: 0px;
+}
+.previews .communicate {
+  width: 600rpx;
+  height: 72rpx;
+  background-color: #45CFFE;
+  color: #FFFFFF;
+  font-size: 30rpx;
+  border-radius: 8rpx;
+  margin-left: 20px;
+}
+#myVideo {
+  width: 100%;
+  height: 450rpx;
+}
+

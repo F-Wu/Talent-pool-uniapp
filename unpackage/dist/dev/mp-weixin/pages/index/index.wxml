@@ -1,0 +1,77 @@
+<scroll-view>
+  <view class="container">
+    <view class="top">
+      <view class="header"><text class="header__text-title">你与牛人其实只差一次聊天</text><text
+          class="header__text-subtitle">人才库</text></view>
+      <view class="choose">
+        <view class="{{[chooseIndex==0?'categoryNameActive':'']}}">
+          <picker mode="selector" range="{{mostPicker}}" value="{{index}}"
+            data-event-opts="{{[['change',[['pickerMost',['$event']]]]]}}" bindchange="__e">
+            <view>{{mostPicker[index]+''}}<text class="iconfont icon-xiangxia" style="font-size:25rpx;"></text></view>
+          </picker>
+        </view>
+        <view data-event-opts="{{[['tap',[['goCity']]]]}}" class="{{[chooseIndex==1?'categoryNameActive':'']}}"
+          bindtap="__e"><text class="text-l ">{{search.city+''}}<text class="iconfont icon-xiangxia"
+              style="font-size:25rpx;"></text></text></view>
+        <view data-event-opts="{{[['tap',[['goOccupation']]]]}}" class="{{[chooseIndex==2?'categoryNameActive':'']}}"
+          bindtap="__e">
+          <view class="collect-l">{{''+search.collect}}<text class="iconfont icon-xiangxia"
+              style="font-size:25rpx;"></text></view>
+        </view>
+      </view>
+    </view>
+    <block wx:if="{{data==true}}">
+      <view class="exhibition">
+        <block wx:if="{{index==0}}">
+          <view class="perlist">
+            <block wx:for="{{List}}" wx:for-item="item" wx:for-index="index" wx:key="index">
+              <view data-event-opts="{{[['tap',[['navigateTo',['$0'],[[['List','',index,'id']]]]]]]}}"
+                class="perlist-info" bindtap="__e">
+                <view class="per-l">
+                  <view class="name">{{''+item.name+''}}</view>
+                  <view class="situation"><text>{{item.age}}</text><text
+                      class="solls">|</text><text>{{item.education}}</text><text
+                      class="solls">|</text><text>{{item.expect}}</text></view>
+                  <view class="experience"><text class="iconfont icon-gongwenbao"
+                      style="color:#C8C7CC;margin-right:20rpx;"></text><text>{{item.education_name}}</text></view>
+                  <view class="skill"><text>{{item.work}}</text></view>
+                  <view class="introduce">熟练运用cad、酷家乐,为人诚实严谨，希望能多积累经验，快速成长熟练运用cad、酷家乐,为人诚实严谨，希望能多积累经验，快速成长</view>
+                </view>
+                <view class="perimg">
+                  <image src="{{item.img}}" mode></image>
+                </view>
+              </view>
+            </block>
+          </view>
+        </block>
+        <block wx:else>
+          <view class="perlist">
+            <block wx:for="{{List1}}" wx:for-item="item" wx:for-index="index" wx:key="index">
+              <view data-event-opts="{{[['tap',[['navigateTo',['$0'],[[['List1','',index,'id']]]]]]]}}"
+                class="perlist-info" bindtap="__e">
+                <view class="per-l">
+                  <view class="name">{{''+item.name+''}}</view>
+                  <view class="situation"><text>{{item.age}}</text><text
+                      class="solls">|</text><text>{{item.education}}</text><text
+                      class="solls">|</text><text>{{item.expect}}</text></view>
+                  <view class="experience"><text class="iconfont icon-gongwenbao"
+                      style="color:#C8C7CC;margin-right:20rpx;"></text><text>{{item.education_name}}</text></view>
+                  <view class="skill"><text>{{item.work}}</text></view>
+                  <view class="introduce">熟练运用cad、酷家乐,为人诚实严谨，希望能多积累经验，快速成长熟练运用cad、酷家乐,为人诚实严谨，希望能多积累经验，快速成长</view>
+                </view>
+                <view class="perimg">
+                  <image src="{{item.img}}" mode></image>
+                </view>
+                <view class="perxx">
+                  <image style="width:30rpx;height:30rpx;" src="../../static/huo.png" mode></image>
+                  <text>{{item.number}}</text>
+                </view>
+              </view>
+            </block>
+          </view>
+        </block>
+        <view class="bottomout">到底了...</view>
+      </view>
+    </block>
+  </view>
+</scroll-view>

@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/candidates/candidates",
+    "pages/city/city",
+    "pages/collection/collection",
+    "pages/user/user",
+    "pages/city/choosecity/choosecity",
+    "pages/search/search",
+    "pages/occupation/occupation",
+    "pages/house/house",
+    "pages/registration/registration",
+    "components/cityBtn/cityBtn",
+    "pages/emptyPage/emptyPage"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#878787",
+    "selectedColor": "#1b1b1b",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/tabberimg/index1.png",
+        "selectedIconPath": "static/tabberimg/index.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "iconPath": "static/tabberimg/my1.png",
+        "selectedIconPath": "static/tabberimg/my.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "usingComponents": {},
+  "sitemapLocation": "sitemap.json"
+}

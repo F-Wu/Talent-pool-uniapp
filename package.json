@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "uview-ui": "^2.0.29"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.7",
+    "browserslist": "^4.20.3",
+    "caniuse-lite": "^1.0.30001343"
+  }
+}

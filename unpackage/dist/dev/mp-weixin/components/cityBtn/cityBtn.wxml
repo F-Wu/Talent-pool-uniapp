@@ -1,0 +1,1 @@
+<view><navigator url="../../pages/city/choosecity/choosecity"><text class="text-l ">{{city+''}}<text class="iconfont icon-xiangxia" style="font-size:25rpx;"></text></text></navigator></view>
